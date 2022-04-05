@@ -1,0 +1,15 @@
+.comment-div span {
+    font-size: 14px;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.comment-div h5 {
+    font-size: 14px;
+    font-style: italic;
+}
+
+.comment-div p {
+    font-size: 16px;
+    width: 700px;
+}

@@ -1,0 +1,28 @@
+.details-page-div, .comments-div, .single-post-div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.single-post-div h1 {
+    font-style: italic;
+    text-decoration: underline 20px aquamarine;
+    text-underline-offset: 10px;
+}
+
+.single-post-div p {
+    width: 700px;
+    font-size: 18px;
+    padding: 25px 0;
+    border-bottom: 3px solid black;
+    border-top: 3px solid black;
+}
+
+.comments-div h4 {
+    font-style: italic;
+    font-size: 20px;
+    background-color: aquamarine;
+    width: 120px;
+    align-self: flex-end;
+}
