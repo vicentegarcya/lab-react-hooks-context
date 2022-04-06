@@ -1,11 +1,14 @@
 import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useTheme } from '../../contexts/ThemeContext/ThemeContext';
 import { getPosts } from '../../services/ListItemsService';
 import './Posts.css';
 
 const Posts = () => {
     const [posts, setPosts] = useState([]);
     const [loading, setLoading] = useState(true);
+
+    const { theme } = useTheme();
 
     useEffect(() => {
         getPosts()
@@ -17,7 +20,7 @@ const Posts = () => {
     }, []);
 
     return (
-        <div className="posts-wrapper container mt-3">
+        <div className={`posts-wrapper container mt-3`}>
             {   loading ? ( "Loading..." ) :
                 posts.map(post => (
                     <div className='post-wrapper' key={post.id}>
